@@ -2,9 +2,10 @@
 	window.onload = actualResizeHandler;
 	window.onresize = resizeThrottler;
 	var resizeTimeout;
+	var initialize = 0;
 	function resizeThrottler() {
     // ignore resize events as long as an actualResizeHandler execution is in the queue
-    
+    initialize = 1;
     if ( !resizeTimeout ) {
       resizeTimeout = setTimeout(function() {
         resizeTimeout = null;
@@ -83,19 +84,10 @@
 
 			liSub.appendChild(liSubUl);
 			
-
-			if (subUl.children.length) {
-				var subUlChildrenDataCount = +subUl.children[0].getAttribute("data-count");
-				if (subUlChildrenDataCount == liSubDataCount +1) {
-					subUl.insertBefore(liSub, subUl.children[0]);
-					
-				} else {
-					subUl.appendChild(liSub);
-					
-				}
+			if (initialize) {
+				subUl.insertBefore(liSub, subUl.children[0]);
 			} else {
 				subUl.appendChild(liSub);
-				
 			}			
 		}		
 	}
