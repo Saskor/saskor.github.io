@@ -1,10 +1,10 @@
 (function () {
 	window.onload = actualResizeHandler;
-		
-	window.onresize = resizeThrottler; /*resizeThrottler()*/
+	window.onresize = resizeThrottler;
 	var resizeTimeout;
 	function resizeThrottler() {
     // ignore resize events as long as an actualResizeHandler execution is in the queue
+    
     if ( !resizeTimeout ) {
       resizeTimeout = setTimeout(function() {
         resizeTimeout = null;
@@ -52,7 +52,9 @@
 			var clonedNode = elem.cloneNode(true);
 
 			var liSub = document.createElement("li");
-			liSub.setAttribute("data-count", elem.getAttribute("data-count"));
+			var elemDataCount = elem.getAttribute("data-count");
+			liSub.setAttribute("data-count", elemDataCount);
+			var liSubDataCount = +liSub.getAttribute("data-count");
 			liSub.classList.add("header-bottom__subnav-item-add");
 			liSub.classList.add("two");
 			var liSubUl = document.createElement("ul");
@@ -71,10 +73,10 @@
 			var elemsiLIInParentMenuItem = clonedNode.querySelectorAll("li");
 			
 			if(elemsiLIInParentMenuItem.length) {
-					for (var j = 0; j < elemsiLIInParentMenuItem.length; j++) {
+					for (var i = 0; i < elemsiLIInParentMenuItem.length; i++) {
 					var subSubLi = document.createElement("li");
 					subSubLi.classList.add("header-bottom__subnav-child-item");
-					subSubLi.innerHTML = '<a href="" class="header-bottom__subnav-child-link">' + elemsiLIInParentMenuItem[j].textContent + '</a>';
+					subSubLi.innerHTML = '<a href="" class="header-bottom__subnav-child-link">' + elemsiLIInParentMenuItem[i].textContent + '</a>';
 					liSubUl.appendChild(subSubLi);
 				}
 			}
@@ -82,15 +84,19 @@
 			liSub.appendChild(liSubUl);
 			
 
-			if (!!elem.getAttribute("data-hidden-list-item") === false) {
-				
+			if (subUl.children.length) {
+				var subUlChildrenDataCount = +subUl.children[0].getAttribute("data-count");
+				if (subUlChildrenDataCount == liSubDataCount +1) {
+					subUl.insertBefore(liSub, subUl.children[0]);
+					
+				} else {
+					subUl.appendChild(liSub);
+					
+				}
+			} else {
 				subUl.appendChild(liSub);
-			 }	else {
-				subUl.insertBefore(liSub, subUl.children[0]);
-			}
-			
-			elem.setAttribute("data-hidden-list-item", true);	
-			
+				
+			}			
 		}		
 	}
 
