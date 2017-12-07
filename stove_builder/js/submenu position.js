@@ -15,7 +15,10 @@
   	var wrapperLeft = document.querySelector(".header-bottom .wrapper-inner").getBoundingClientRect().left;
   	var targetCoords = target.getBoundingClientRect();
   	var subListCoords = targetCoords.left - wrapperLeft + ((target.offsetWidth) /2)-(target.nextElementSibling.offsetWidth/2);
-  	if (subListCoords < 0) return;
+  	if (subListCoords < 0) {
+      target.nextElementSibling.style.left = 10+"px";
+      return;
+    }
   	 
   	target.nextElementSibling.style.left = subListCoords+"px";
 	};
