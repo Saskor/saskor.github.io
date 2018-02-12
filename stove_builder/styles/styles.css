@@ -70,6 +70,10 @@ a {
 					float: left;
 				}
 
+					.callback span {
+						white-space: nowrap;
+					}
+
 					.callback__phone-ico {
 							width:  9px;
 							height: 9px;
@@ -350,12 +354,14 @@ a {
 				background: #d9002a;
 				padding: 7px 15px;
 				text-transform: uppercase;
+				-webkit-transition: background-color .05s ease;
 				transition: background-color .05s ease;
 				display: none;
 			}
 
 			.header-bottom__resp-nav:hover {
 				background: #de335a;
+				-webkit-transition: background-color .2s ease;
 				transition: background-color .2s ease;
 			}
 
@@ -363,11 +369,13 @@ a {
 					height: 42px;
 					background: #d9002a;
 					padding: 0 5px;
+					-webkit-transition: background-color .5s ease;
 					transition: background-color .5s ease;
 				}
 				
 				.header-bottom__resp-nav-top.new-background {
 					background: #c50026;
+					-webkit-transition: background-color .5s ease;
 					transition: background-color .5s ease;
 				}
 
@@ -389,7 +397,8 @@ a {
 					}
 
 				.header-bottom__resp-nav-menu-list {
-					box-shadow: 0 3px 18px rgba(44, 44, 44, 0.8);
+					-webkit-box-shadow: 0 3px 18px rgba(44, 44, 44, 0.8);
+					        box-shadow: 0 3px 18px rgba(44, 44, 44, 0.8);
 					background: #ecf0f3;
 					display: none;
 				}
@@ -399,6 +408,9 @@ a {
 						border-top: 1px solid #f7f7f7;
 						border-bottom: 1px solid #dedede;
 						color: #000;
+						-webkit-transition: border-top-color .02s ease,
+												border-bottom-color .02s ease,
+												background-color .02s ease;
 						transition: border-top-color .02s ease,
 												border-bottom-color .02s ease,
 												background-color .02s ease;
@@ -409,6 +421,9 @@ a {
 						background: #de335a;
 						border-top: 1px solid #d9002a;
 						border-bottom: 1px solid #970013;
+						-webkit-transition: border-top-color .02s ease,
+												border-bottom-color .02s ease,
+												background-color .3s ease;
 						transition: border-top-color .02s ease,
 												border-bottom-color .02s ease,
 												background-color .3s ease;
@@ -424,10 +439,12 @@ a {
 							font-size: 12px;
 							font-weight: bold;
 							color: #000;
+							-webkit-transition: color .03s ease;
 							transition: color .03s ease;
 						}
 
 						.header-bottom__resp-nav-menu-link:hover {
+							-webkit-transition: color .3s ease;
 							transition: color .3s ease;
 						}
 
@@ -472,7 +489,8 @@ a {
 						.header-bottom__subnav-list {
 							background: #f7f7f9;
 							border-top: 2px solid #d02c47;
-							box-shadow: 0px 2px 4px 0px #e2e2e2;
+							-webkit-box-shadow: 0px 2px 4px 0px #e2e2e2;
+							        box-shadow: 0px 2px 4px 0px #e2e2e2;
 							display: none;
 							padding: 20px;
 							position: absolute;
@@ -633,17 +651,11 @@ a {
 
 		  .callback-form__top-close-ico::before {
 			  -webkit-transform: rotate(45deg);
-			  -moz-transform: rotate(45deg);
-			  -ms-transform: rotate(45deg);
-			  -o-transform: rotate(45deg);
 			  transform: rotate(45deg);
 			}
 
 			.callback-form__top-close-ico::after {
 			  -webkit-transform: rotate(-45deg);
-			  -moz-transform: rotate(-45deg);
-			  -ms-transform: rotate(-45deg);
-			  -o-transform: rotate(-45deg);
 			  transform: rotate(-45deg);
 			}
 
@@ -787,12 +799,14 @@ a {
 				border-color: #de335a;
 				color: #de335a;
 				background: #fff;
+				-webkit-transition: background-color .0s ease;
 				transition: background-color .0s ease;
 			}
 
 			.callback-form__close-button:hover {
 				background: #de335a;
 				color: #fff;
+				-webkit-transition: background-color .5s ease;
 				transition: background-color .5s ease; 
 			}
 
@@ -828,6 +842,10 @@ a {
     float: none;
     margin-top: 3px;
   }
+
+  	.callback_header-middle span {
+    white-space: nowrap;
+  	}
 
 	.callback__phone-ico_header-middle {
 	margin: 7px 14px 0 0;
