@@ -76,7 +76,7 @@
 		}
 
 		function loadPageState() {
-			if (localStorage.sliderLeftPositionPersentage == undefined) {
+			if (localStorage.distributedClientsCounter == undefined) {
 				thumbElem.innerHTML = 0;
 			}
 			thumbElem.innerHTML = localStorage.distributedClientsCounter;
