@@ -292,7 +292,7 @@ div.popup_visible-no-transparent {
 					}
 
 						.features__subtitle-popup-text {
-							font: 20px/1.6 'gothamProRegular';
+							font: 20px/1.6 sans-serif;
 							margin: 26px 0 0 24px; 
 						}
 
@@ -465,7 +465,8 @@ div.popup_visible-no-transparent {
 
 						.features__list-item-title {
 							font-size: 20px;
-							font-family: "GothamProBold";
+							font-family: sans-serif;
+							font-weight: bold
 							line-height: 17px;
 							position: relative;
 							z-index: 1;
@@ -515,7 +516,7 @@ div.popup_visible-no-transparent {
 					}*/
 
 						.expertise__titles-title {
-							font: 56px/1.04 "didactGothic";
+							font: 56px/1.04 "Didact Gothic";
 						}
 
 						.expertise__titles-title-orange {
@@ -614,7 +615,7 @@ div.popup_visible-no-transparent {
 				}
 
 					.diagrams__title {
-						font: 56px/39px "didactGothic";
+						font: 56px/39px "Didact Gothic";
 						color: #6f14ab;
 					}
 
@@ -816,7 +817,7 @@ div.popup_visible-no-transparent {
 			}
 
 				.work-stages__title {
-					font: 56px/1.04 "didactGothic";
+					font: 56px/1.04 "Didact Gothic";
 					margin: 200px 0 0 19px;
 					float: left;
 					width: 620px;
@@ -862,7 +863,7 @@ div.popup_visible-no-transparent {
 								}
 
 									.work-stages__popup-list-item {
-										font: 16px/1.43 'gothamProRegular';
+										font: 16px/1.43 sans-serif;
 										margin-bottom: 10px;
 										position: relative;
 										z-index: 2;
@@ -912,7 +913,7 @@ div.popup_visible-no-transparent {
 					  height: 196px;
 					  opacity: 0.8;
 					  mix-blend-mode: multiply;
-					  font-family: "gothamProBlack";
+					  font-family: sans-serif;
 					  font-size: 220px;
 					  color: rgba(154, 38, 160, 0.36);
 					  text-shadow: 0 0 20px rgba(0, 0, 0, 0.09)
@@ -1104,7 +1105,7 @@ div.popup_visible-no-transparent {
 				}
 
 					.expertise__titles-title {
-						font: 50px/1.08 'didactGothic';
+						font: 50px/1.08 'Didact Gothic';
 					}
 
 					.expertise__titles-subtitle {
@@ -1138,11 +1139,11 @@ div.popup_visible-no-transparent {
 				}
 
 					.diagrams__title {
-						font : 50px/39px "didactGothic";
+						font : 50px/39px "Didact Gothic";
 					}
 
 						.diagrams__subtitle-left-part {
-							font: 18px/1.5 'gothamProRegular';
+							font: 18px/1.5 sans-serif;
 							margin-top: 37px;
 							width: 500px;
 						}
