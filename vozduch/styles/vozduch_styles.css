@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic&subset=cyrillic');
+
 @font-face {
     font-family: "didactGothic"; 
     src: url(../fonts/DidactGothic-Regular.ttf) format('truetype'); 
