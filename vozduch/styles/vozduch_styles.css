@@ -1,10 +1,4 @@
 @font-face {
-    font-family: "gothamProBlack"; 
-    src: url(../fonts/GothamProBlack.ttf) format('truetype'); 
-}
-
-
-@font-face {
     font-family: "didactGothic"; 
     src: url(../fonts/DidactGothic-Regular.ttf) format('truetype'); 
 }
