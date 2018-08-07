@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>alarislabs</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+	<body>
+		<h2>Задача</h2>
+		<p>
+			Дана строка и две маски в формате регулярных выражений. Требуется преобразовать исходную строку так, чтобы совпадения по
+			первой маске были курсивом, а по второй - жирным шрифтом. Следует учесть возможные пересечения найденных вхождений.
+		</p>
+		<p>
+			Для первичного контроля можно использовать следующие входные данные: строка "hemidemisemiquaver", поисковые регекспы "emi"
+			и "m.se" (регистр при поиске не учитывать).
+		</p>
+		<p>hemidemisemiquaver</p>
+		<div class="result">
+			<span>h<i>emi</i>d<i>e</i><strong><i>mi</i>s<i>e</i></strong><i>mi</i>quaver</span>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>
