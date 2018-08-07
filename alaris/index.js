@@ -1,5 +1,5 @@
 const text = 'hemidemisemiquaver';
-const s1 = 'emi';//dearch mask one
+const s1 = 'emi';//search mask one
 const s2 = 'm.se';//search mask two
 
 let textResult = ""; //variable for text with needed HTML layout
