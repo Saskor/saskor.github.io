@@ -9,12 +9,12 @@ let reg2 = new RegExp(s2,"ig");//create regexp objects from search masks
 let reg2MatchesInText = [];//array of 'reg2' ('foundObj') objects
 let found;
 
-while(found = reg2.exec(text)){
+while(found = reg2.exec(text)){	//searching 'reg2' matching in 'text' variable
 	let foundObj = {};
 	foundObj.index = found.index;
 	foundObj.val = found[0];
 	foundObj.leftMatch = false;
-	foundObj.rightMatch = false;//searching 'reg2' matching in 'text' variable
+	foundObj.rightMatch = false;
 	//and set properties of foundObj
 	if (text.slice(foundObj.index-1,foundObj.index+2) === s1) {//if 'reg1' partially
 		foundObj.leftMatch = true;	//crossed 'reg2' on the left side of 'reg2'
