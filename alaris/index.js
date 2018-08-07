@@ -47,7 +47,7 @@ for (let i = 0; i < reg2MatchesInText.length; i++) {//if we are found at least
     } else {
         firstPart  = text.slice(subStrLeftIndex, subStrRightIndex);
     }
-    firstPart.replace(reg1,"<i>" + s1 + "</i>");//searching and replacing 'reg1'
+   firstPart = firstPart.replace(reg1,"<i>" + s1 + "</i>");//searching and replacing 'reg1'
 	//to cursive text in a part of 'text' variable between begin of text and
 	//'reg2' match position or between 'reg2' current position and 'reg2' previous
 	//position
