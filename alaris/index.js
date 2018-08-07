@@ -63,6 +63,7 @@ for (let i = 0; i < reg2MatchesInText.length; i++) {//if we are found at least
 		//of the loop
 	}
 	//'reg1' partially crossing 'reg2' cases handling
+	//and build HTML layout according to current case
 	if (maskObj.leftMatch && !maskObj.rightMatch) {
 		secondPart = "<i>" + text.slice(subStrRightIndex - 1, subStrRightIndex) + "</i><strong><i>"
 		+ maskObj.leftPart + "</i>" + maskObj.rightPart + "</strong>";
