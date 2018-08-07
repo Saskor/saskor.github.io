@@ -28,7 +28,6 @@ while(found = reg2.exec(text)){	//searching 'reg2' matching in 'text' variable
 		foundObj.rightPart = foundObj.val[3];
 	}
 	reg2MatchesInText.push(foundObj);//push 'foundObj' to 'reg2MatchesInText' array
-
 }
 
 let subStrLeftIndex = 0;//index of symbol in 'text' variable that set begin
