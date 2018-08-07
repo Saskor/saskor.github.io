@@ -10,7 +10,7 @@ let reg2MatchesInText = [];//array of 'reg2' ('foundObj') objects
 let found;
 
 while(found = reg2.exec(text)){	//searching 'reg2' matching in 'text' variable
-	let foundObj = {};
+	let foundObj = {};	//and define 'foundObj' properties
 	foundObj.index = found.index;
 	foundObj.val = found[0];
 	foundObj.leftMatch = false;
