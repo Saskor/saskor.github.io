@@ -54,9 +54,10 @@ for (let i = 0; i < reg2MatchesInText.length; i++) {//if we are found at least
     subStrLeftIndex = maskObj.index + maskObj.val.length;//increment begin index
 	//for set 'firstPart' variable for next iterate of the loop
 
-	if (maskObj.rightMatch) {//if 'reg1' partially crossed 'reg2' on the right side
-		// add cursive part of text after 'reg2' initialised in 'afterRightPart'
+	if (maskObj.rightMatch) {
 		afterRightPart = text.slice(maskObj.index + maskObj.val.length, maskObj.index + maskObj.val.length + 2);
+		//if 'reg1' partially crossed 'reg2' on the right side
+		// define crossing part of text in 'afterRightPart' variable
 		subStrLeftIndex = maskObj.index + maskObj.val.length + 2;
 		//increment begin index for set 'firstPart' variable for next iterate
 		//of the loop
