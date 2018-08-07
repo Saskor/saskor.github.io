@@ -27,7 +27,7 @@ while(found = reg2.exec(text)){	//searching 'reg2' matching in 'text' variable
 		foundObj.centralPart = foundObj.val[2];
 		foundObj.rightPart = foundObj.val[3];
 	}
-	reg2MatchesInText.push(foundObj);//push foundObj to 'reg2MatchesInText' array
+	reg2MatchesInText.push(foundObj);//push 'foundObj' to 'reg2MatchesInText' array
 
 }
 
