@@ -49,7 +49,7 @@ for (let i = 0; i < reg2MatchesInText.length; i++) {//if we are found at least
     }
     firstPart.replace(reg1,"<i>" + s1 + "</i>");//searching and replacing 'reg1'
 	//to cursive text in a part of 'text' variable between begin of text and
-	//'reg2' match position or between 'reg2' current position and 'reg2' next
+	//'reg2' match position or between 'reg2' current position and 'reg2' previous
 	//position
     subStrLeftIndex = maskObj.index + maskObj.val.length;//increment begin index
 	//for set 'firstPart' variable for next iterate of the loop
